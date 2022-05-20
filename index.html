@@ -18,92 +18,96 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
     <title>Work Day Scheduler</title>
   </head>
 
   <body>
     <header class="jumbotron bg-primary">
-      <h1 class="display-3 text-light">Work Day Scheduler</h1>
-      <p class="lead text-light">A simple calendar app for scheduling your work day</p>
+      <h1 class="display-3 text-center text-light">Work Day Scheduler</h1>
+      <p class="lead text-light text-center">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container-fluid">
       <!-- Created card for the date and time -->
         <div class="row-fluid ">
+          <!-- TODO: Display 12hr time with am/pm -->
           <div class= "py-5 m-3 bg-primary border border-info border-start-0 rounded text-center shadow-lg">
-              <p class="h1 text-light" id="time"></p>          
+              <p class="h2 text-light" id="time"></p>          
           </div>
         </div>
     </div>
 
       <!-- Start of the Timeblocks -->
-    <div class="row my-3 bg-primary">
-      <div class= "col-1 bg-secondary py-4 border text-light text-center font-weight-bold fs-2">8:00am</div>
-        <input class = "col-10 border p-4 text-light bg-primary border-light align-center"></input>
+
+      <!-- TODO: Change background color in relation to the time -->
+      <!-- TODO: Have the save button save the data in the input to local storage -->
+    <div class="row my-3">
+      <div class= "col-1 bg-secondary py-4 border text-light text-center font-weight-bold"><span class= "h4">8:00am </span></div>
+        <input id="8am" type="text" class = "col-10 border p-4 text-light bg-primary border-light align-center"></input>
           <button type="button" class="btn btn-success col-1 p-4 bg-success text-light text-center font-weight-bold">Save</button>     
       </div>
 
 
-      <div class="row my-3 bg-primary">
-        <div class= "col-1 bg-secondary py-4 border text-light text-center font-weight-bold fs-2">9:00am</div>
-          <input class = "col-10 border p-4 text-light bg-primary border-light align-center"></input>
+      <div class="row my-3">
+        <div class= "col-1 bg-secondary py-4 border text-light text-center font-weight-bold fs-2"><span class= "h4">9:00am </span></div>
+          <input id="9am" class = "col-10 border p-4 text-light bg-primary border-light align-center"></input>
           <button type="button" class="btn btn-success col-1 p-4 bg-success text-light text-center font-weight-bold">Save</button>     
       </div>
 
 
-      <div class="row my-3 bg-primary">
-        <div class= "col-1 bg-secondary py-4 border text-light text-center font-weight-bold fs-2">10:00am</div>
-          <input class = "col-10 border p-4 text-light bg-primary border-light align-center"></input>
+      <div class="row my-3">
+        <div class= "col-1 bg-secondary py-4 border text-light text-center font-weight-bold fs-2"><span class= "h4">10:00am </span></div>
+          <input id = "10am" class = "col-10 border p-4 text-light bg-primary border-light align-center"></input>
             <button type="button" class="btn btn-success col-1 p-4 bg-success text-light text-center font-weight-bold">Save</button>     
       </div>
 
 
-      <div class="row my-3 bg-primary">
-        <div class= "col-1 bg-secondary py-4 border text-light text-center font-weight-bold fs-2">11:00am</div>
-          <input class = "col-10 border p-4 text-light bg-primary border-light align-center"></input>
+      <div class="row my-3">
+        <div class= "col-1 bg-secondary py-4 border text-light text-center font-weight-bold fs-2"><span class= "h4">11:00am </span></div>
+          <input id="11am" class = "col-10 border p-4 text-light bg-primary border-light align-center"></input>
             <button type="button" class="btn btn-success col-1 p-4 bg-success text-light text-center font-weight-bold">Save</button>     
       </div>
 
 
-      <div class="row my-3 bg-primary">
-        <div class= "col-1 bg-secondary py-4 border text-light text-center font-weight-bold fs-2">12:00pm</div>
-          <input class = "col-10 border p-4 text-light bg-primary border-light align-center"></input>
+      <div class="row my-3">
+        <div class= "col-1 bg-secondary py-4 border text-light text-center font-weight-bold fs-2"><span class= "h4">12:00pm </span></div>
+          <input id="12pm" class = "col-10 border p-4 text-light bg-primary border-light align-center"></input>
             <button type="button" class="btn btn-success col-1 p-4 bg-success text-light text-center font-weight-bold">Save</button>     
       </div>
 
 
-      <div class="row my-3 bg-primary">
-        <div class= "col-1 bg-secondary py-4 border text-light text-center font-weight-bold fs-2">1:00pm</div>
-          <input class = "col-10 border p-4 text-light bg-primary border-light align-center"></input>
+      <div class="row my-3">
+        <div class= "col-1 bg-secondary py-4 border text-light text-center font-weight-bold fs-2"><span class= "h4">1:00pm </span></div>
+          <input id="1pm" class = "col-10 border p-4 text-light bg-primary border-light align-center"></input>
             <button type="button" class="btn btn-success col-1 p-4 bg-success text-light text-center font-weight-bold">Save</button>     
       </div>
 
 
-      <div class="row my-3 bg-primary">
-        <div class= "col-1 bg-secondary py-4 border text-light text-center font-weight-bold fs-2">2:00pm</div>
-          <input class = "col-10 border p-4 text-light bg-primary border-light align-center"></input>
+      <div class="row my-3">
+        <div class= "col-1 bg-secondary py-4 border text-light text-center font-weight-bold fs-2"><span class= "h4">2:00pm </span></div>
+          <input id="2pm" class = "col-10 border p-4 text-light bg-primary border-light align-center"></input>
             <button type="button" class="btn btn-success col-1 p-4 bg-success text-light text-center font-weight-bold">Save</button>     
       </div>
 
 
-      <div class="row my-3 bg-primary">
-        <div class= "col-1 bg-secondary py-4 border text-light text-center font-weight-bold fs-2">3:00pm</div>
-          <input class = "col-10 border p-4 text-light bg-primary border-light align-center"></input>
+      <div class="row my-3">
+        <div class= "col-1 bg-secondary py-4 border text-light text-center font-weight-bold fs-2"><span class= "h4">3:00pm </span></div>
+          <input id="3pm" class = "col-10 border p-4 text-light bg-primary border-light align-center"></input>
             <button type="button" class="btn btn-success col-1 p-4 bg-success text-light text-center font-weight-bold">Save</button>     
       </div>
 
 
-      <div class="row my-3 bg-primary">
-        <div class= "col-1 bg-secondary py-4 border text-light text-center font-weight-bold fs-2">4:00pm</div>
-          <input class = "col-10 border p-4 text-light bg-primary border-light align-center"></input>
+      <div class="row my-3">
+        <div class= "col-1 bg-secondary py-4 border text-light text-center font-weight-bold fs-2"><span class= "h4">4:00pm </span></div>
+          <input id="4pm" class = "col-10 border p-4 text-light bg-primary border-light align-center"></input>
             <button type="button" class="btn btn-success col-1 p-4 bg-success text-light text-center font-weight-bold">Save</button>     
       </div>
 
 
-      <div class="row my-3 bg-primary">
-        <div class= "col-1 bg-secondary py-4 border text-light text-center font-weight-bold fs-2">5:00pm</div>
-          <input class = "col-10 border p-4 text-light bg-primary border-light align-center"></input>
+      <div class="row my-3">
+        <div class= "col-1 bg-secondary py-4 border text-light text-center font-weight-bold fs-2"><span class= "h4">5:00pm </span></div>
+          <input id="5pm" class = "col-10 border p-4 text-light bg-primary border-light align-center"></input>
             <button type="button" class="btn btn-success col-1 p-4 bg-success text-light text-center font-weight-bold">Save</button>     
       </div>
 
